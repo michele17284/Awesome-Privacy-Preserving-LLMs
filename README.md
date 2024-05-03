@@ -26,14 +26,14 @@ LLMs have taken the world by storm, showing outstanding capabilities in several 
 
 ## Data anonymization
 
-[Guaranteeing anonymity when sharing medical data, the Datafly System](https://pubmed.ncbi.nlm.nih.gov/9357587/#:~:text=We%20present%20a%20computer%20program,details%20found%20within%20the%20data.) - Foundational paper for k-anonymity
-[Automated anonymization of text documents](https://www.semanticscholar.org/paper/Automated-anonymization-of-text-documents-Mamede-Baptista/3c31662b2f81ad149c8e04025ad148b496d5118e) - Modular anonymization system for text documents.
-[Data Anonymization for Pervasive Health Care: Systematic Literature Mapping Study](https://pubmed.ncbi.nlm.nih.gov/34652278/) - Examines methods for text perturbation (like microaggregation or data swapping).
-[DataSifterText: Partially Synthetic Text Generation for Sensitive Clinical Notes](https://link.springer.com/article/10.1007/s10916-022-01880-6) - Use BERT to impute previously masked sensitive info.
-[Natural Text Anonymization Using Universal Transformer with a Self-attention](https://www.semanticscholar.org/paper/Natural-Text-Anonymization-Using-Universal-with-a-Romanov-Fedotova/acb2dfc52cb13762778f20a51c32071762afd867) - Anonymization system that uses a universal transformer model to generate anonymized text.
-[Deep Reinforcement Learning-based Text Anonymization against Private-Attribute Inference](https://aclanthology.org/D19-1240/) - Text anonymization system that manipulates the embeddings with an RL-based privacy-preserver.
-[Recovering from Privacy-Preserving Masking with Large Language Models](https://arxiv.org/abs/2309.08628) - Use an LLM to impute previously masked tokens.
-[Hide and Seek (HaS): A Lightweight Framework for Prompt Privacy Protection](https://arxiv.org/abs/2309.03057) - System using two local LLMs for anonymization and de-anonymization and in the middle use a black-box LLM.
+- [Guaranteeing anonymity when sharing medical data, the Datafly System](https://pubmed.ncbi.nlm.nih.gov/9357587/#:~:text=We%20present%20a%20computer%20program,details%20found%20within%20the%20data.) - Foundational paper for k-anonymity
+- [Automated anonymization of text documents](https://www.semanticscholar.org/paper/Automated-anonymization-of-text-documents-Mamede-Baptista/3c31662b2f81ad149c8e04025ad148b496d5118e) - Modular anonymization system for text documents.
+- [Data Anonymization for Pervasive Health Care: Systematic Literature Mapping Study](https://pubmed.ncbi.nlm.nih.gov/34652278/) - Examines methods for text perturbation (like microaggregation or data swapping).
+- [DataSifterText: Partially Synthetic Text Generation for Sensitive Clinical Notes](https://link.springer.com/article/10.1007/s10916-022-01880-6) - Use BERT to impute previously masked sensitive info.
+- [Natural Text Anonymization Using Universal Transformer with a Self-attention](https://www.semanticscholar.org/paper/Natural-Text-Anonymization-Using-Universal-with-a-Romanov-Fedotova/acb2dfc52cb13762778f20a51c32071762afd867) - Anonymization system that uses a universal transformer model to generate anonymized text.
+- [Deep Reinforcement Learning-based Text Anonymization against Private-Attribute Inference](https://aclanthology.org/D19-1240/) - Text anonymization system that manipulates the embeddings with an RL-based privacy-preserver.
+- [Recovering from Privacy-Preserving Masking with Large Language Models](https://arxiv.org/abs/2309.08628) - Use an LLM to impute previously masked tokens.
+- [Hide and Seek (HaS): A Lightweight Framework for Prompt Privacy Protection](https://arxiv.org/abs/2309.03057) - System using two local LLMs for anonymization and de-anonymization and in the middle use a black-box LLM.
 
 
 ## Data anonymization with Differential Privacy
