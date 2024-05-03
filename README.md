@@ -3,7 +3,7 @@ LLMs have taken the world by storm, showing outstanding capabilities in several 
 
 ## Table of Contents
 
--[Awesome-Privacy-Preserving-LLMs](#awesome-privacy-preserving-llms)
+- [Awesome-Privacy-Preserving-LLMs](#awesome-privacy-preserving-llms)
   - [Attacks](#attacks)
   - [Data anonymization](#data-anonymization)
   - [Pre-training with Differential Privacy](#pretraining-with-differential-privacy)
