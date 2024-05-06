@@ -99,11 +99,31 @@ architectures, initializations and hyperparameter tuning methods explicitly devi
 - [Can Public Large Language Models Help Private Cross-device Federated Learning?](https://arxiv.org/abs/2305.12132) Introduce DP-FTRL and use LLMs to improve privacy/utility tradeoff of the local LM in DP-FL.
 - [Federated Learning of Gboard Language Models with Differential Privacy](https://arxiv.org/abs/2305.18465) Present and analyze twenty Gboard LMs trained for Next Word Prediction with DP-FTRL.
 - [Benchmarking Differential Privacy and Federated Learning for BERT Models](https://arxiv.org/abs/2106.13973) DP-FL training of BERT, RoBERTa, DistillBERT and ALBERT.
-- [
 
 ## Machine Unlearning
 
-
-
+- [Locating and Editing Factual Associations in GPT](https://arxiv.org/abs/2202.05262) ROME method allows to trace factual predictions back to single neurons and manipulate them.
+- [Can Sensitive Information Be Deleted From LLMs? Objectives for Defending Against Extraction Attacks](https://arxiv.org/abs/2309.17410) Shows issues of ROME and improves upon it.
+- [DEPN: Detecting and Editing Privacy Neurons in Pretrained Language Models](https://arxiv.org/abs/2310.20138) Detect and manipulate neurons connected with private information.
+- [Machine Unlearning](https://arxiv.org/abs/1912.03817) SISA method divides training data and the model training so that unlearning involves repeating just a part of the training process.
+- [Knowledge Unlearning for Mitigating Privacy Risks in Language Models](https://arxiv.org/abs/2210.01504) Negates the loss function used in training, with the objective to maximize the loss on the target sequences.
+- [Who's Harry Potter? Approximate Unlearning in LLMs](https://arxiv.org/abs/2310.02238) Use a model fine-tuned on the data to forget in order to compare with the original model the likelihood growth and identify the sensitive data.
+- [Unlearn What You Want to Forget: Efficient Unlearning for LLMs](https://arxiv.org/abs/2310.20150) Build unlearning layers and train them with a selective student-teacher objective based on KL-divergence in order for the student model to maximize the
+divergence from the teacher model (on target data).
+- [Preserving Privacy Through Dememorization: An Unlearning Technique For Mitigating Memorization Risks In Language Models](https://aclanthology.org/2023.emnlp-main.265/) DeMemorization through Reinforcement Learning.
+- [Knowledge Sanitization of Large Language Models](https://arxiv.org/abs/2309.11852) Sanitization approach to limit hallucinations deriving from unlearning.
+- [In-Context Unlearning: Language Models as Few Shot Unlearners](https://arxiv.org/abs/2310.07579) Machine Unlearning enforced through ICL.
 
 ## Tools and Frameworks
+
+- [TensorFlow Privacy](https://github.com/tensorflow/privacy) Python library with optimizers for training ML models with DP.
+- [PyVacy](https://github.com/ChrisWaites/pyvacy) Pytorch translation of TensorFlow Privacy.
+- [OpenDP project](https://projects.iq.harvard.edu/files/opendp/files/opendp_white_paper_11may2020.pdf) Collection of algorithms for generating DP statistics.
+- [DiffPrivLib](https://api.semanticscholar.org/CorpusID:195798910) Provides a wide range of DP tools for ML and data analysis.
+- [Google DP](https://github.com/google/differential-privacy) Provides a broad set of DP tools.
+- [Microsoft DP](https://arxiv.org/abs/2309.11765) Inference-DP framework.
+- [EKTELO](https://dl.acm.org/doi/10.1145/3183713.3196921) Flexible and extensible framework for DP data analysis.
+- [PyTorch Opacus](https://arxiv.org/abs/2109.12298) Enables training PyTorch models with DP.
+- [private-transformers](https://github.com/lxuechen/private-transformers) Provides a privacy engine built off Opacus rewritten specifically to facilitate integration with the transformers library.
+- [dp-transformers](https://github.com/microsoft/dp-transformers) Toolkit that provides a simplified integration of transformers training with DP.
+- [Chorus](https://api.semanticscholar.org/CorpusID:226266222)DP statistical queries through a cooperative query processing system.
