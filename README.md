@@ -38,50 +38,60 @@ LLMs have taken the world by storm, showing outstanding capabilities in several 
 
 ## Data anonymization with Differential Privacy
 
-[Broadening the Scope of Differential Privacy Using Metrics](https://link.springer.com/chapter/10.1007/978-3-642-39077-7_5) - Foundational paper for Metric Differential Privacy
-[ADePT: Auto-encoder based Differentially Private Text Transformation](https://arxiv.org/abs/2102.01502) - Auto-encoder based DP algorithm to anonymize text while retaining utility. 
-[When differential privacy meets NLP: The devil is in the detail](https://arxiv.org/abs/2109.03175) - Formal analysis of ADePT, highlights some issues with privacy guarantees.
-[DP-VAE: Human-Readable Text Anonymization for Online Reviews with Differentially Private Variational Autoencoders](https://dl.acm.org/doi/abs/10.1145/3485447.3512232) - End-to-end DP-VAE for text anonymization.
-[DP-BART for Privatized Text Rewriting under Local Differential Privacy](https://arxiv.org/abs/2302.07636) - Text privatization model based on BART.
-[Sanitizing Sentence Embeddings (and Labels) for Local Differential Privacy](https://dl.acm.org/doi/abs/10.1145/3543507.3583512) - Sanitization system based on Purkayastha Mechanism.
-[Differential Privacy for Text Analytics via Natural Text Sanitization](https://arxiv.org/abs/2106.01221) - They propose SANTEXT to replace sensitive tokens.
-[A Customized Text Sanitization Mechanism with Differential Privacy](https://arxiv.org/abs/2207.01193) - They propose CUSTEXT to replace sensitive tokens.
-[InferDPT: Privacy-Preserving Inference for Black-box Large Language Model](https://cs.paperswithcode.com/paper/privinfer-privacy-preserving-inference-for) - They propose RANTEXT to replace sensitive tokens.
-[Leveraging Hierarchical Representations for Preserving Privacy and Utility in Text](https://arxiv.org/abs/1910.08917) - New noise distribution specifically devised for Metric DP.
-[A Differentially Private Text Perturbation Method Using a Regularized Mahalanobis Metric](https://arxiv.org/abs/2010.11947) - Regularized Mahalanobis Metric for text perturbation.
-[On a Utilitarian Approach to Privacy Preserving Text Generation](https://arxiv.org/abs/2104.11838) - Based on Vickrey auction, they balance the choice beetween first and second neighbours using a tuning parameter.
-[Guiding Text-to-Text Privatization by Syntax](https://arxiv.org/abs/2306.01471) - Includes grammatical categories into the privatization process to preserve syntax.
-[The Limits of Word Level Differential Privacy](https://arxiv.org/abs/2205.02130) - Paraphrasing model obtained by fine-tuning GPT2.
+- [Broadening the Scope of Differential Privacy Using Metrics](https://link.springer.com/chapter/10.1007/978-3-642-39077-7_5) - Foundational paper for Metric Differential Privacy
+- [ADePT: Auto-encoder based Differentially Private Text Transformation](https://arxiv.org/abs/2102.01502) - Auto-encoder based DP algorithm to anonymize text while retaining utility. 
+- [When differential privacy meets NLP: The devil is in the detail](https://arxiv.org/abs/2109.03175) - Formal analysis of ADePT, highlights some issues with privacy guarantees.
+- [DP-VAE: Human-Readable Text Anonymization for Online Reviews with Differentially Private Variational Autoencoders](https://dl.acm.org/doi/abs/10.1145/3485447.3512232) - End-to-end DP-VAE for text anonymization.
+- [DP-BART for Privatized Text Rewriting under Local Differential Privacy](https://arxiv.org/abs/2302.07636) - Text privatization model based on BART.
+- [Sanitizing Sentence Embeddings (and Labels) for Local Differential Privacy](https://dl.acm.org/doi/abs/10.1145/3543507.3583512) - Sanitization system based on Purkayastha Mechanism.
+- [Differential Privacy for Text Analytics via Natural Text Sanitization](https://arxiv.org/abs/2106.01221) - They propose SANTEXT to replace sensitive tokens.
+- [A Customized Text Sanitization Mechanism with Differential Privacy](https://arxiv.org/abs/2207.01193) - They propose CUSTEXT to replace sensitive tokens.
+- [InferDPT: Privacy-Preserving Inference for Black-box Large Language Model](https://cs.paperswithcode.com/paper/privinfer-privacy-preserving-inference-for) - They propose RANTEXT to replace sensitive tokens.
+- [Leveraging Hierarchical Representations for Preserving Privacy and Utility in Text](https://arxiv.org/abs/1910.08917) - New noise distribution specifically devised for Metric DP.
+- [A Differentially Private Text Perturbation Method Using a Regularized Mahalanobis Metric](https://arxiv.org/abs/2010.11947) - Regularized Mahalanobis Metric for text perturbation.
+- [On a Utilitarian Approach to Privacy Preserving Text Generation](https://arxiv.org/abs/2104.11838) - Based on Vickrey auction, they balance the choice beetween first and second neighbours using a tuning parameter.
+- [Guiding Text-to-Text Privatization by Syntax](https://arxiv.org/abs/2306.01471) - Includes grammatical categories into the privatization process to preserve syntax.
+- [The Limits of Word Level Differential Privacy](https://arxiv.org/abs/2205.02130) - Paraphrasing model obtained by fine-tuning GPT2.
 
 ## Pre-training with Differential Privacy
 
-
-
+- [Learning and Evaluating a Differentially Private Pre-trained Language Model](https://www.semanticscholar.org/paper/Learning-and-Evaluating-a-Differentially-Private-Hoory-Feder/c3b597011f64e7c5459bbe4502163e463fb13f5a) Fully private pre-training of BERT.
+- [Learning and Evaluating a Differentially Private Pre-trained Language Model](https://arxiv.org/abs/2211.02956) Fully private pre-training of BERT for the legal domain.
+- [Differentially Private Language Models Benefit from Public Pre-training](https://arxiv.org/abs/2009.05886) Comparison between fully private training and public pre-training with public fine-tuning for GPT-2.
+- [Why Is Public Pretraining Necessary for Private Model Training?](https://arxiv.org/abs/2302.09483) Focused on the theoretical reasons why public pre-training is necessary for private learning.
+- [https://arxiv.org/abs/2302.09483](https://arxiv.org/abs/2305.13865) Select pre-training data based on the fine-tuning data distribution, creating smaller pre-training datasets for smaller models.
 
 
 ## Fine-tuning with Differential Privacy
 
-
-
-
-
+- [Synthetic Text Generation with Differential Privacy: A Simple and Practical Recipe](https://arxiv.org/abs/2210.14348) Private fine-tuning of GPT-2.
+- [Making the Shoe Fit: Architectures, Initializations, and Tuning for Learning with Privacy](https://openreview.net/forum?id=rJg851rYwH) Propose different
+architectures, initializations and hyperparameter tuning methods explicitly devised for private learning.
+- [Simple Baselines Are Strong Performers for Differentially Private Natural Language Processing] (https://openreview.net/forum?id=oOiSJEr2-Tt) Ghost Clipping introduced to save memory and make private-learning almost on par with non-private-learning from a memory usage point of view.
+- [Differentially Private Optimization on Large Model at Small Cost](https://arxiv.org/abs/2210.00038) New Book-Keeping technique that requires a single backpropagation pass.
+- [Differentially Private Language Models for Secure Data Sharing](https://arxiv.org/abs/2210.13918) DP-tuning of GPT-2 to generate a synthetic and private version of the tuning dataset.
+- [EW-Tune: A Framework for Privately Fine-Tuning Large Language Models with Differential Privacy](https://arxiv.org/abs/2210.15042) Decrease the induced noise significantly by using Edgeworth accountant and (realistically) assuming that tuning epochs are not many.
+  
 
 ## Parameter-Efficient Fine-Tuning with Differential Privacy
 
-
-
-
-
+- [Differentially Private Fine-tuning of Language Models](https://arxiv.org/abs/2110.06500) DP-PEFT of both RoBERTa and GPT-2 with several techniques.
+- [Large Language Models Can Be Strong Differentially Private Learners](https://arxiv.org/abs/2110.05679) DP-PEFT of both RoBERTa and GPT-2 with several techniques.
+- [Privacy-Preserving Prompt Tuning for Large Language Model Services](https://arxiv.org/abs/2305.06212) DP-prompt-tuning framework (RAPT).
 
 
 ## Reinforcement Learning with Differential Privacy
 
-
+- [Privately Aligning Language Models with Reinforcement Learning](https://arxiv.org/abs/2310.16960) DP-RL of GPT-2
 
 ## Inference with Differential Privacy
 
-
-
+- [Privacy-Preserving In-Context Learning for Large Language Models](https://arxiv.org/abs/2305.01639) DP-ICL based on partitioning the dataset, use it to get ICL examples, then aggregate the partitioned answers with noise to get a final answer.
+- [Privacy-Preserving In-Context Learning with Differentially Private Few-Shot Generation](https://arxiv.org/abs/2309.11765) DP-ICL based on partitioning the dataset, use it to get ICL examples, then aggregate the partitioned answers with noise to get a synthetic ICL example.
+- [Flocks of Stochastic Parrots: Differentially Private Prompt Learning for Large Language Models](https://arxiv.org/abs/2305.15594) Prompt-PATE is used here, where an ensemble of teachers get private samples to give private answers that are later noisily aggregated into a synthetic (private) example.
+- [DP-OPT: Make Large Language Model Your Privacy-Preserving Prompt Engineer](https://arxiv.org/abs/2312.03724) DP-Offsite Prompt Tuning uses an ensemble of local models to get private predictions and then aggregate them with noise.
+- [Split-and-Denoise: Protect large language model inference with local differential privacy](https://openreview.net/forum?id=vxmvbzw76R&referrer=%5Bthe%20profile%20of%20Peihua%20Mai%5D(%2Fprofile%3Fid%3D~Peihua_Mai1)) Local encoder and decoder to add noise to the input and remove noise from the output of an offsite LLM.
+- [InferDPT: Privacy-Preserving Inference for Black-box Large Language Model](https://cs.paperswithcode.com/paper/privinfer-privacy-preserving-inference-for) InferDPT has local anonymizer and de-anonymizer to anonymize the input and de-anonymize the output of an offsite LLM.
 
 ## Federated Learning with Differential Privacy
 
