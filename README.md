@@ -95,7 +95,11 @@ architectures, initializations and hyperparameter tuning methods explicitly devi
 
 ## Federated Learning with Differential Privacy
 
-
+- [Training Production Language Models without Memorizing User Data](https://arxiv.org/abs/2009.10031) Next word prediction model trained in a federated fashion with DP-FedAVG
+- [Can Public Large Language Models Help Private Cross-device Federated Learning?](https://arxiv.org/abs/2305.12132) Introduce DP-FTRL and use LLMs to improve privacy/utility tradeoff of the local LM in DP-FL.
+- [Federated Learning of Gboard Language Models with Differential Privacy](https://arxiv.org/abs/2305.18465) Present and analyze twenty Gboard LMs trained for Next Word Prediction with DP-FTRL.
+- [Benchmarking Differential Privacy and Federated Learning for BERT Models](https://arxiv.org/abs/2106.13973) DP-FL training of BERT, RoBERTa, DistillBERT and ALBERT.
+- [
 
 ## Machine Unlearning
 
