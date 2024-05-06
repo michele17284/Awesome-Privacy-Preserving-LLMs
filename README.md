@@ -11,10 +11,10 @@ LLMs have taken the world by storm, showing outstanding capabilities in several 
   - [Fine-tuning with Differential Privacy](#fine-tuning-with-differential-privacy)
   - [Parameter-Efficient Fine-Tuning with Differential Privacy](#parameter-efficient-fine-tuning-with-differential-privacy)
   - [Reinforcement Learning with Differential Privacy](#reinforcement-learning-with-differential-privacy)
-  - [Inference with Differential Privacy](inference-with-differential-privacy)
-  - [Federated Learning with Differential Privacy](federated-learning-with-differential-privacy)
-  - [Machine Unlearning](machine-unlearning)
-  - [Tools and Frameworks](tools-and-frameworks)
+  - [Inference with Differential Privacy](#inference-with-differential-privacy)
+  - [Federated Learning with Differential Privacy](#federated-learning-with-differential-privacy)
+  - [Machine Unlearning](#machine-unlearning)
+  - [Tools and Frameworks](#tools-and-frameworks)
 
 
 ## Attacks
