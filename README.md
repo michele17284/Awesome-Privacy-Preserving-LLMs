@@ -126,4 +126,5 @@ divergence from the teacher model (on target data).
 - [PyTorch Opacus](https://arxiv.org/abs/2109.12298) Enables training PyTorch models with DP.
 - [private-transformers](https://github.com/lxuechen/private-transformers) Provides a privacy engine built off Opacus rewritten specifically to facilitate integration with the transformers library.
 - [dp-transformers](https://github.com/microsoft/dp-transformers) Toolkit that provides a simplified integration of transformers training with DP.
-- [Chorus](https://api.semanticscholar.org/CorpusID:226266222)DP statistical queries through a cooperative query processing system.
+- [Chorus](https://api.semanticscholar.org/CorpusID:226266222) DP statistical queries through a cooperative query processing system.
+- [autodp](https://github.com/yuxiangw/autodp) Automates the process of calculating the privacy guarantees for complex algorithms and supports several standard DP mechanisms.
