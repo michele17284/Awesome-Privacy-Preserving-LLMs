@@ -51,7 +51,17 @@ LLMs have taken the world by storm, showing outstanding capabilities in several 
 
 ## Model Inversion
 
-- [
+- [Privacy Risks of General-Purpose Language Models](https://www.semanticscholar.org/paper/Privacy-Risks-of-General-Purpose-Language-Models-Pan-Zhang/b3c73de96640ee858f83c3f0eda2a3d15d59b847) Design the first model inversion attack against Transformer-based Language Models.
+- [Information Leakage in Embedding Models](https://arxiv.org/abs/2004.00053) Attack model is a NN trained with multiset prediction loss so that it is possible for the model to predict each word in the embedding also conditioned on the words already predicted.
+- [Sentence Embedding Leaks More Information than You Expect: Generative Embedding Inversion Attack to Recover the Whole Sentence](https://arxiv.org/abs/2305.03010) Implement the inversion as a generative LM task with a decoder-only model conditioned on the embedding of the sentence to invert as the first token representation.
+- [Text Embeddings Reveal (Almost) As Much As Text](https://arxiv.org/abs/2310.06816) Propose an iterative method to reconstruct the input text of models that produce embeddings for documents generating iteratively different hyphothesis that may justify the observed embedding.
+- [Privacy Leakage in Text Classification A Data Extraction Approach](https://aclanthology.org/2022.privatenlp-1.3/) Inject canaries in the training data and then reconstruct a partially masked sentence to search for tokens that maximize the probability of the target label.
+- [Canary Extraction in Natural Language Understanding Models](https://arxiv.org/abs/2203.13920) Very similar to the previous work but uses a different reconstruction method.
+- [Text Revealer: Private Text Reconstruction via Model Inversion Attacks against Transformers](https://arxiv.org/abs/2209.10505) Create a dataset mimicking unknown training data, train a model on it, and then adjust it by perturbing word embeddings to reduce classification loss on a target model.
+- [Deep Leakage from Gradients](https://arxiv.org/abs/1906.08935) Demonstrates that if the gradients are openly accessible, it is possible to reconstruct the training data.
+- [TAG: Gradient Attack on Transformer-based Language Models](https://arxiv.org/abs/2103.06819) Recovers up to 50% of the original tokens attacking BERT.
+- [LAMP: Extracting Text from Gradients with Language Model Priors](https://arxiv.org/abs/2202.08827) Simultaneously train the attack model to minimize the difference between reconstruction gradients and choosing at each iteration only sequences that have low perplexity according to an external LM.
+- [Recovering Private Text in Federated Learning of Language Models](https://arxiv.org/abs/2205.08514) Recover from the gradients a bag of words for the sentence to extract and then perform beam search to effectively reconstruct the sentence.
 
 ## Data anonymization
 
