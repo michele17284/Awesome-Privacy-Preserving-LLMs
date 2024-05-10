@@ -4,7 +4,9 @@ LLMs have taken the world by storm, showing outstanding capabilities in several 
 ## Table of Contents
 
 - [Awesome-Privacy-Preserving-LLMs](#awesome-privacy-preserving-llms)
-  - [Attacks](#attacks)
+  - [Data Extraction](#data-extraction)
+  - [Membership Inference Attacks](#membership-inference-attacks)
+  - [Model Inversion](model-inversion)
   - [Data anonymization](#data-anonymization)
   - [Data anonymization with Differential Privacy](#data-anonymization-with-differential-privacy)
   - [Pre-training with Differential Privacy](#pretraining-with-differential-privacy)
@@ -17,12 +19,39 @@ LLMs have taken the world by storm, showing outstanding capabilities in several 
   - [Tools and Frameworks](#tools-and-frameworks)
 
 
-## Attacks
+## Data Extraction
 
+- [Quantifying Memorization Across Neural Language Models](https://arxiv.org/abs/2202.07646) Shows that it is possible to reconstruct training data with black-box access.
+- [Extracting Training Data from Large Language Models](https://arxiv.org/abs/2012.07805) Query GPT-2 to extract training data.
+- [Are Large Pre-Trained Language Models Leaking Your Personal Information?](https://arxiv.org/abs/2205.12628) Query LMs for email addresses and names, finding that the models are prone to leaking.
+- [Scalable extraction of training data from (production) language models](https://arxiv.org/abs/2311.17035) Studies data extraction without prior knowledge about the dataset.
+- [DecodingTrust: A Comprehensive Assessment of Trustworthiness in GPT Models](https://arxiv.org/abs/2306.11698) Explore the leakage of training data of GPT models.
+- [Analyzing Leakage of Personally Identifiable Information in Language Models](https://arxiv.org/abs/2302.00539) Propose to solve a masked language modeling task to reconstruct masked personal information from a sentence.
+- [Dataset reconstruction attack against language models](https://www.researchgate.net/publication/353191026_Dataset_Reconstruction_Attack_against_Language_Models) Reconstruct the training data of a finetuned GPT-2.
+- [Scalable extraction of training data from (production) language models](https://arxiv.org/abs/2311.17035) Querying open-source models they were able to verify the success of Carlini's attack procedure by accessing to the training data only to verify the attack.
+- [Quantifying Association Capabilities of Large Language Models and Its Implications on Privacy Leakage](https://arxiv.org/abs/2305.12707) Shows that it is possible to recover 3\% of the training emails from a 20 billion parameter model with attacks that require association.
+- [ETHICIST: Targeted Training Data Extraction Through Loss Smoothed Soft Prompting and Calibrated Confidence Estimation](https://aclanthology.org/2023.acl-long.709/) Propose an attack to recover a certain suffix given a precise prefix, known to be in the pre-training data.
+- [Controlling the Extraction of Memorized Data from Large Language Models via Prompt-Tuning](https://arxiv.org/abs/2305.11759) Similar approach to ETHICIST but based on soft propmpt tuning.
+- [ProPILE: Probing Privacy Leakage in Large Language Models](https://arxiv.org/abs/2307.01881) Tool designed to test models with black-box and white-box attacks against their tendency to release PII.
+- [Ignore Previous Prompt: Attack Techniques For Language Models](https://arxiv.org/abs/2211.09527) The original goal of a prompt is changed with malicious text.
+- ["Do Anything Now": Characterizing and Evaluating In-The-Wild Jailbreak Prompts on Large Language Models](https://arxiv.org/abs/2308.03825) Characterize a large set of jailbreak prompts and evaluate their effectiveness against different LLMs.
+- [ChatGPT_DAN](https://github.com/0xk1h0/ChatGPT_DAN) ChatGPT jailbreak that makes it behave like a fictional assistant.
+- [Multi-step Jailbreaking Privacy Attacks on ChatGPT](https://arxiv.org/abs/2304.05197) Propose a multi-step jailbreak prompt to extract personal information, based on Chain-of-Thought.
 
+## Membership Inference Attacks
 
+- [Membership inference attack susceptibility of clinical language models]([https://arxiv.org/abs/2211.09527](https://arxiv.org/abs/2104.08305) Conduct attacks against BERT and GPT-2 trained on clinical data and show that DP helps mitigate privacy leakage.
+- [Auditing Data Provenance in Text-Generation Models](https://arxiv.org/abs/1811.00513) Attack exploits the tendency of LMs to rank rare words higher when they are in the same context in which they were seen during training.
+- [Membership Inference Attacks on Sequence-to-Sequence Models: Is My Data In Your Machine Translation System?](https://arxiv.org/abs/1904.05506) Train an attack classifier only on features that can be extracted from the output sequences.
+- [Membership inference attacks from first principles](https://arxiv.org/abs/2112.03570) Train numerous shadow GPT-2 models to measure the probability of observing a certain likelihood of an example in models trained and not trained on it.
+- [Detecting Pretraining Data from Large Language Models](https://arxiv.org/abs/2310.16789) Design attacks that threshold the average log likelihood of the top k rarest words to ascertain whether or not the example is part of the training data.
+- [Quantifying Privacy Risks of Masked Language Models Using Membership Inference Attacks](https://aclanthology.org/2022.emnlp-main.570/) Demonstrate the effectiveness of MIA designed against LMs trained with Masked Language Modeling objectives.
+- [Membership Inference Attacks against Language Models via Neighbourhood Comparison](https://arxiv.org/abs/2305.18462) Use a sentence and its perturbed version and propose that the model should act similarly with both if the sentence is not in the training set.
+- [On the privacy risk of in-context learning](https://virtual2023.aclweb.org/paper_TrustNLP_13.html) Show that LLMs, are vulnerable to MIAs that target datasets used during prompt training.
 
+## Model Inversion
 
+- [
 
 ## Data anonymization
 
