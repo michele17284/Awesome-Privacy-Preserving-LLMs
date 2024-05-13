@@ -7,6 +7,8 @@ LLMs have taken the world by storm, showing outstanding capabilities in several 
   - [Data Extraction](#data-extraction)
   - [Membership Inference Attacks](#membership-inference-attacks)
   - [Model Inversion](model-inversion)
+  - [Re-Identification from Anonymized Data](#re-identification-from-anonymized-data)
+  - [Attacks against Synthetic Data Generators](#attacks-against-synthetic-data-generators)
   - [Data anonymization](#data-anonymization)
   - [Data anonymization with Differential Privacy](#data-anonymization-with-differential-privacy)
   - [Pre-training with Differential Privacy](#pretraining-with-differential-privacy)
@@ -63,6 +65,17 @@ LLMs have taken the world by storm, showing outstanding capabilities in several 
 - [LAMP: Extracting Text from Gradients with Language Model Priors](https://arxiv.org/abs/2202.08827) Simultaneously train the attack model to minimize the difference between reconstruction gradients and choosing at each iteration only sequences that have low perplexity according to an external LM.
 - [Recovering Private Text in Federated Learning of Language Models](https://arxiv.org/abs/2205.08514) Recover from the gradients a bag of words for the sentence to extract and then perform beam search to effectively reconstruct the sentence.
 
+## Re-Identification from Anonymized Data
+
+- [Robust de-anonymization of large sparse datasets](https://arxiv.org/abs/cs/0610105) Show that an attacker can use background knowledge or external data to reconstruct the identity of a user in a sparse dataset describing users preferences or transactions.
+- [Estimating the success of re-identifications in incomplete datasets using generative models](https://www.nature.com/articles/s41467-019-10933-3) Proposes a method for estimating the probability that an individual has been successfully identified.
+- [Clinical Text Anonymization, its Influence on Downstream NLP Tasks and the Risk of Re-Identification](https://aclanthology.org/2023.eacl-srw.11/) Re-ID patiens from their anonymized history.
+
+## Attacks against Synthetic Data Generators
+- [Synthetic Data -- Anonymisation Groundhog Day](https://arxiv.org/abs/2011.07018) Empirically show that synthetic data does not provide a better tradeoff between privacy and utility than traditional anonymisation techniques.
+- [TAPAS: A toolbox for adversarial privacy auditing of synthetic data](https://arxiv.org/abs/2211.06550) Present a toolbox for performing attacks against synthetic data generators.
+- [Achilles' Heels: Vulnerable Record Identification in Synthetic Data Publishing](https://arxiv.org/abs/2306.10308) Identify vulnerable records in the synthetic dataset.
+
 ## Data anonymization
 
 - [Guaranteeing anonymity when sharing medical data, the Datafly System](https://pubmed.ncbi.nlm.nih.gov/9357587/#:~:text=We%20present%20a%20computer%20program,details%20found%20within%20the%20data.) - Foundational paper for k-anonymity
@@ -100,7 +113,6 @@ LLMs have taken the world by storm, showing outstanding capabilities in several 
 - [Why Is Public Pretraining Necessary for Private Model Training?](https://arxiv.org/abs/2302.09483) Focused on the theoretical reasons why public pre-training is necessary for private learning.
 - [https://arxiv.org/abs/2302.09483](https://arxiv.org/abs/2305.13865) Select pre-training data based on the fine-tuning data distribution, creating smaller pre-training datasets for smaller models.
 
-
 ## Fine-tuning with Differential Privacy
 
 - [Synthetic Text Generation with Differential Privacy: A Simple and Practical Recipe](https://arxiv.org/abs/2210.14348) Private fine-tuning of GPT-2.
@@ -111,13 +123,11 @@ architectures, initializations and hyperparameter tuning methods explicitly devi
 - [Differentially Private Language Models for Secure Data Sharing](https://arxiv.org/abs/2210.13918) DP-tuning of GPT-2 to generate a synthetic and private version of the tuning dataset.
 - [EW-Tune: A Framework for Privately Fine-Tuning Large Language Models with Differential Privacy](https://arxiv.org/abs/2210.15042) Decrease the induced noise significantly by using Edgeworth accountant and (realistically) assuming that tuning epochs are not many.
   
-
 ## Parameter-Efficient Fine-Tuning with Differential Privacy
 
 - [Differentially Private Fine-tuning of Language Models](https://arxiv.org/abs/2110.06500) DP-PEFT of both RoBERTa and GPT-2 with several techniques.
 - [Large Language Models Can Be Strong Differentially Private Learners](https://arxiv.org/abs/2110.05679) DP-PEFT of both RoBERTa and GPT-2 with several techniques.
 - [Privacy-Preserving Prompt Tuning for Large Language Model Services](https://arxiv.org/abs/2305.06212) DP-prompt-tuning framework (RAPT).
-
 
 ## Reinforcement Learning with Differential Privacy
 
