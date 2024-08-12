@@ -1,7 +1,7 @@
 ![Taxonomy of Privacy-Preserving LLMs](https://github.com/michele17284/Awesome-Privacy-Preserving-LLMs/blob/main/Taxonomy.png?raw=true)
 
 # Awesome-Privacy-Preserving-LLMs [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-LLMs have taken the world by storm, showing outstanding capabilities in several NLP-related domains. They have been proven to have astonishing emergent capabilities and unfortunately it has become painfully obvious that memorization is one of them. While this is not a problem for models dealing with public data, when the task at hand requires to deal with sensitive data this issue cannot be overlooked. This is why, spurring from our research survey, we present here a curated list of papers on the subjects of LLMs data memorization, the privacy attacks that this allows and potential solutions, including data anonymization, Differential Privacy and Machine Unlearning.
+LLMs have taken the world by storm, showing outstanding capabilities in several NLP-related domains. They have been proven to have astonishing emergent capabilities and unfortunately it has become painfully obvious that memorization is one of them. While this is not a problem for models dealing with public data, when the task at hand requires to deal with sensitive data this issue cannot be overlooked. This is why, spurring from our [research survey](https://arxiv.org/abs/2408.05212), we present here a curated list of papers on the subjects of LLMs data memorization, the privacy attacks that this allows and potential solutions, including data anonymization, Differential Privacy and Machine Unlearning.
 
 ## Table of Contents
 
